@@ -1,0 +1,167 @@
+:root {
+    --nav-bg: #FFFF;
+    --nav-border: #CAD5E2;
+    --btns-bg : #3C4F50;
+
+}
+
+
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('/font/Minecraftia-Regular.ttf') format('truetype');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'minecraftia', sans-serif;
+}
+
+/* navigation */
+nav{
+    top: 0;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 45px;
+    border-bottom: 2px solid var(--nav-border);
+    background-color: var(--nav-bg);
+    z-index: 1000;
+}
+
+
+nav .row ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav .row ul  li{
+    list-style-type: none;
+}
+
+nav .row ul  a{
+    text-decoration: none;
+}
+
+
+/* Home */
+.containers {
+    max-width: 100%;
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    padding-top: 120px;
+}
+
+.containers .row {
+    flex-direction: column;
+}
+
+.containers .judul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers .subjudul {
+    width: 50vw;
+    text-align: center;
+    
+}
+
+.containers .judul h2{
+    color: #767a7a;
+}
+
+.containers .message {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.containers a{
+    display: grid;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+
+}
+
+
+
+.containers .btns {
+    color: #ffff;
+    background-color: var(--btns-bg);
+}
+
+.containers .btnb {
+    color: black;
+    border: 2px solid black;
+}
+
+
+/* Information */
+.containers .information {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers .msg{
+    width: 300px;
+    border: 2px solid #E7E7E7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.containers .msg:hover{
+    border: 2px solid var(--btns-bg);
+}
+
+.containers .msg p:first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.containers .msg p:last-child{
+    color: var(--btns-bg);
+    font-size: 10px;
+}
+
+
+
+/* foooter */
+footer {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    border-top: 2px solid var(--nav-border);
+    padding: 20px;
+    bottom: 0;
+}
+
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    padding-top: 120px;
+    width: 100%;
+}
+
+
+
+
+
