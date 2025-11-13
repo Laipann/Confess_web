@@ -1,0 +1,22 @@
+<div class="container col-md-9">
+        <div class="card " >
+        <div class="row g-0">
+            <div class="col-md-4">
+            <img src="<%- songs.data[0].cover %>" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><small class="text-body-secondary">From : <%- songs.nama_pengirim %></small></h5>
+                    <p class="card-text"><small class="text-body-secondary">To : <%- songs.nama_penerima %></small></p>
+                    <p class="card-text">Message : <%- songs.message %></small></p>
+                
+                    
+                <div class="bodyBawah">
+                    <p>Singer : <%- songs.data[0].penyanyi %></p>
+                    <a href="<%- songs.data[0].url %>"><button id="play-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16"><path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/></svg></button></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>

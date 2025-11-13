@@ -54,7 +54,6 @@ nav .row ul  a{
 .containers {
     max-width: 100%;
     width: 100%;
-    height: 200vh;
     display: grid;
     padding-top: 120px;
 }
@@ -96,8 +95,6 @@ nav .row ul  a{
     justify-content: center;
 
 }
-
-
 
 .containers .btns {
     color: #ffff;
@@ -151,15 +148,226 @@ footer {
     border-top: 2px solid var(--nav-border);
     padding: 20px;
     bottom: 0;
+    margin-top: 30px;
 }
 
 
 .container {
     max-width: 100%;
-    height: 100vh;
     padding-top: 120px;
     width: 100%;
 }
+
+.container textarea{
+    height: 120px !important; 
+    font-size: 12px;
+}
+
+.container input{
+    font-size: 12px;
+}
+
+/* browse */
+.container .search {
+    height: 50px;
+}
+
+
+.container .btn{
+    height: 50px;
+}
+
+
+.scrollCon .card{
+    width: 100%;
+    border-radius: 20px;
+} 
+
+.scrollCon{
+    min-width: 100%;
+}
+.scrollCon .gaps{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* infinite scroll */
+.infinite-scroll {
+    margin: 50px 0 50px 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-mask: liner-gradient(transparent, white 20%, white 80%);
+    mask: linear-gradient(90deg,transparent, white 20%, white 80%,transparent);
+}
+
+.infinite-scroll .infiniteScr .card {
+    width: 300px;
+}
+
+.infinite-scroll .infiniteScr{
+    display: inline-flex;
+    gap: 20px;
+    animation: scroll 25s linear infinite ;
+}
+
+.infinite-scroll .reverse{
+    display: inline-flex;
+    gap: 20px;
+    animation: scroll 25s linear infinite reverse;
+}
+
+.infinite-scroll .infiniteScr:hover {
+    animation-play-state: paused;
+}
+
+/* detail */
+#play-btn{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid #000;
+    
+}
+
+#play-btn svg{
+    width: 40px;
+    height: 30px;
+}
+
+.card-body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.bodyBawah{
+    display: flex;
+    bottom: 0;
+    background-color: var(--nav-border);
+    margin-top: auto;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.bodyBawah p{
+    margin-top: auto;
+}
+
+/* submit */
+.container .autocomp-box{
+    padding: 0;
+    opacity: 0;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.container.active .autocomp-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.autocomp-box li {
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.autocomp-box.active .autocomp-box li{
+    display: block;
+}
+
+.autocomp-box li:hover {
+    background: #efefef;
+}
+
+
+.mb-3 {
+    position: relative;
+}
+
+.search {
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.search.active {
+    display: block;
+ 
+}
+
+.mylist {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    background-color: var(--nav-bg);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 150px;
+    height: 150px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mylist .song {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mylist p{
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mylist :hover {
+    background-color: var(--btns-bg);
+}
+
+.mylist img{
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@layer reset {
+     .search{
+        all: unset;
+        width: 300px;
+    }
+    
+
+
+}
+
+
+
 
 
 

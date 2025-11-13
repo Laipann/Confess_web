@@ -1,0 +1,29 @@
+<div class="container col-md-7">
+
+    <h2>Browse</h2>
+    <p>See Message From Another People</p>
+
+        <div class="input-group mb-3">
+            <input type="text" class="search form-control" name="search" placeholder="Find Name">
+            <button class="btn btn-primary">Search</button>
+        </div>
+        
+        <div class="input-group d-flex justify-content-center" style="gap: 30px;">
+            
+            <% if(songs.length === 0) { %>
+                <div class="alert alert-danger col-md h-50" role="alert">Data tidak ada</div>
+            <% } %>
+    
+        </div>
+
+        
+
+            <div class="scrollCon">
+                <div class="gaps"></div>
+            </div>
+
+        </div>
+</div>
+
+
+<script src="browse.js"></script>

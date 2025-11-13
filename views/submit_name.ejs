@@ -1,0 +1,27 @@
+<div class="container col-md-7 ">
+    <div class="row w-100">
+        <div class="col">
+            <h2 class="text-center">Send Message</h2>
+            <form method="post" >
+                <div class="mb-3 submit">
+                  <label for="nama" class="form-label">From</label>
+                  <input type="text" class="form-control " id="nama_pengirim" for="nama_pengirim" name="nama_pengirim" placeholder="Who send this?" required >
+                  <label for="nama" class="form-label mt-3">To</label>
+                  <input type="text" class="form-control" id="nama_penerima" for="nama_penerima" name="nama_penerima" placeholder="who you want to send?" required >
+                  <label for="message" class="form-label mt-3">Message</label>
+                  <div class="search active"></div>
+                  <textarea class="form-control h-75" name="message" for="message" id="message" placeholder="Enter Message Here" required></textarea>
+                  <label for="song" class="form-label mt-3">Song</label>
+                  <input class="form-control" type="text" placeholder="Search and find song" for="song" name="song" id="song" required>
+                  <input class="form-control" type="hidden" for="url" name="url" id="urlLagu" value="">
+                  <input class="form-control" type="hidden" for="penyanyi" name="penyanyi" id="penyanyi" value="">
+                  <input class="form-control" type="hidden" for="cover" name="cover" id="cover" value="">
+                </div>
+                <button type="submit" class="btn btn-primary w-100 " onclick="removeClass()">Send Message</button>
+              </form>
+         
+              <!-- lagu spootify -->
+        </div>
+    </div>
+</div>
+<script src="submit.js"></script>
