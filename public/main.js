@@ -24,8 +24,10 @@ async function infinites(m) {
             scrollerContent.map(item => {
                 const duplikat = item.cloneNode(true)
                 infiniteScroll.appendChild(duplikat)
+                console.log(duplikat)
             })
-            })
+        })
+
     }  catch(err){
         console.log(err)
     }

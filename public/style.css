@@ -210,15 +210,22 @@ footer {
 }
 
 .infinite-scroll .infiniteScr{
-    display: inline-flex;
+    display: flex;
     gap: 20px;
-    animation: scroll 25s linear infinite ;
+    animation: scroll 10s linear infinite ;
+}
+
+.infinite-scroll p{
+    width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .infinite-scroll .reverse{
-    display: inline-flex;
+    display: flex;
     gap: 20px;
-    animation: scroll 25s linear infinite reverse;
+    animation: scroll 10s linear infinite reverse ;
 }
 
 .infinite-scroll .infiniteScr:hover {
@@ -352,9 +359,11 @@ footer {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-45%);
     }
 }
+
+
 
 @layer reset {
      .search{
